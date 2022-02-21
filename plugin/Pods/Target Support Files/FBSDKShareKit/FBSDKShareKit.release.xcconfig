@@ -1,0 +1,11 @@
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/FBAEMKit/XCFrameworks" "${PODS_ROOT}/FBAEMKit/XCFrameworks/FBAEMKit.xcframework/ios-arm64_armv7" "${PODS_ROOT}/FBAEMKit/XCFrameworks/FBAEMKit.xcframework/ios-arm64_i386_x86_64-simulator" "${PODS_ROOT}/FBAEMKit/XCFrameworks/FBAEMKit.xcframework/ios-arm64_x86_64-maccatalyst" "${PODS_ROOT}/FBSDKCoreKit/XCFrameworks" "${PODS_ROOT}/FBSDKCoreKit/XCFrameworks/FBSDKCoreKit.xcframework/ios-arm64_armv7" "${PODS_ROOT}/FBSDKCoreKit/XCFrameworks/FBSDKCoreKit.xcframework/ios-arm64_i386_x86_64-simulator" "${PODS_ROOT}/FBSDKCoreKit/XCFrameworks/FBSDKCoreKit.xcframework/ios-arm64_x86_64-maccatalyst" "${PODS_ROOT}/FBSDKCoreKit_Basics/XCFrameworks" "${PODS_ROOT}/FBSDKCoreKit_Basics/XCFrameworks/FBSDKCoreKit_Basics.xcframework/ios-arm64_armv7" "${PODS_ROOT}/FBSDKCoreKit_Basics/XCFrameworks/FBSDKCoreKit_Basics.xcframework/ios-arm64_i386_x86_64-simulator" "${PODS_ROOT}/FBSDKCoreKit_Basics/XCFrameworks/FBSDKCoreKit_Basics.xcframework/ios-arm64_x86_64-maccatalyst" "${PODS_ROOT}/FBSDKShareKit/XCFrameworks" "${PODS_ROOT}/FBSDKShareKit/XCFrameworks/FBSDKShareKit.xcframework/ios-arm64_armv7" "${PODS_ROOT}/FBSDKShareKit/XCFrameworks/FBSDKShareKit.xcframework/ios-arm64_i386_x86_64-simulator" "${PODS_ROOT}/FBSDKShareKit/XCFrameworks/FBSDKShareKit.xcframework/ios-arm64_x86_64-maccatalyst"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+OTHER_LDFLAGS = $(inherited) -framework "FBAEMKit" -framework "FBSDKCoreKit" -framework "FBSDKCoreKit_Basics"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/FBSDKShareKit
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

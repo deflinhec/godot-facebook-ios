@@ -1,0 +1,17 @@
+*.xcuserstate
+
+*.xcuserdatad/
+
+plugin/Pods
+
+godot/
+
+godot-*/
+
+bin/
+
+lib/
+
+*.taz.xz
+
+.sdk/

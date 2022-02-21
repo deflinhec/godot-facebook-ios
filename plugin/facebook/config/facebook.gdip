@@ -1,0 +1,77 @@
+[config]
+name="Facebook"
+binary="facebook/bin/facebook.a"
+
+initialization="register_facebook_types"
+deinitialization="unregister_facebook_types"
+
+[dependencies]
+linked=[
+    "facebook/lib/FBAEMKit.xcframework", 
+    "facebook/lib/FBSDKCoreKit.xcframework", 
+    "facebook/lib/FBSDKCoreKit_Basics.xcframework",
+    "facebook/lib/FBSDKLoginKit.xcframework",
+    "facebook/lib/FBSDKShareKit.xcframework"]
+    
+embedded=[]
+system=["Accelerate.framework"]
+
+capabilities=[]
+
+files=[]
+
+linker_flags=["-ObjC"]
+
+[plist]
+;Warning: You will need to update the [plist] section every time you reinstall/upgrade the plugin!
+
+;@ IMPORTANT @: Replace with your app id: https://developers.facebook.com/docs/facebook-login/ios
+FacebookAppID="!YOUR_FACEBOOK_APP_ID!"
+
+;@ IMPORTANT @: Replace with your client token: https://developers.facebook.com/docs/facebook-login/ios
+FacebookClientToken="!YOUR_FACEBOOK_CLIENT_TOKEN!"
+
+;@ IMPORTANT @: Replace with your app id: https://developers.facebook.com/docs/facebook-login/ios
+CFBundleURLTypes:raw="
+<array>
+    <dict>
+        <key>CFBundleURLSchemes</key>
+		<array>
+			<string>fb!YOUR_FACEBOOK_APP_ID!</string>
+		</array>
+		<key>CFBundleTypeRole</key>
+		<string>Viewer</string>
+		<key>CFBundleURLName</key>
+		<string>fb</string>
+    </dict>
+</array>
+"
+
+;@ OPTIONAL @:
+FacebookAutoLogAppEventsEnabled:boolean=true
+
+;@ OPTIONAL @:
+FacebookAdvertiserIDCollectionEnabled:boolean=true
+
+;@ OPTIONAL @: Replace with your app display name: https://developers.facebook.com/docs/facebook-login/ios
+FacebookDisplayName="!YOUR_FACEBOOK_DISPLAY_NAME!"
+
+LSApplicationQueriesSchemes:raw="
+<array>
+    <string>fbapi</string>
+    <string>fbapi20130214</string>
+    <string>fbapi20130410</string>
+    <string>fbapi20130702</string>
+    <string>fbapi20131010</string>
+    <string>fbapi20131219</string>
+    <string>fbapi20140410</string>
+    <string>fbapi20140116</string>
+    <string>fbapi20150313</string>
+    <string>fbapi20150629</string>
+    <string>fbapi20160328</string>
+    <string>fbauth</string>
+    <string>fb-messenger-share-api</string>
+    <string>fbauth2</string>
+    <string>fbshareextension</string>
+</array>
+"

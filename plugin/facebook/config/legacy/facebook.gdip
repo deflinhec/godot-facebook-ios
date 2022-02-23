@@ -54,7 +54,7 @@ FacebookAutoLogAppEventsEnabled:boolean=true
 FacebookAdvertiserIDCollectionEnabled:boolean=true
 
 ;@ OPTIONAL @: Replace with your app display name: https://developers.facebook.com/docs/facebook-login/ios
-FacebookDisplayName="YOUR_FACEBOOK_DISPLAY_NAME"
+FacebookDisplayName="!YOUR_FACEBOOK_DISPLAY_NAME!"
 
 LSApplicationQueriesSchemes:raw="
 <array>
